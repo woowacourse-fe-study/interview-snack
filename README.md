@@ -1,6 +1,7 @@
 ## 🍿 인터뷰스낵
 
-인터뷰 질문을 스낵처럼 야금야금 해치우는 모의면접 스터디입니다. 👥 👥
+- 인터뷰 질문을 스낵처럼 야금야금 해치우는 모의면접 스터디입니다. 👥 👥
+- 스터디 문의: [@zereight](https://github.com/zereight) [@swon3210](https://github.com/swon3210) [@365kim](https://github.com/365kim)
 
 <br/>
 
