@@ -1,0 +1,21 @@
+{
+  "files": {
+    "main.css": "/interview-snack/static/css/main.e55bc2bb.chunk.css",
+    "main.js": "/interview-snack/static/js/main.9d8c9825.chunk.js",
+    "main.js.map": "/interview-snack/static/js/main.9d8c9825.chunk.js.map",
+    "runtime-main.js": "/interview-snack/static/js/runtime-main.ca573adc.js",
+    "runtime-main.js.map": "/interview-snack/static/js/runtime-main.ca573adc.js.map",
+    "static/js/2.87e67329.chunk.js": "/interview-snack/static/js/2.87e67329.chunk.js",
+    "static/js/2.87e67329.chunk.js.map": "/interview-snack/static/js/2.87e67329.chunk.js.map",
+    "index.html": "/interview-snack/index.html",
+    "static/css/main.e55bc2bb.chunk.css.map": "/interview-snack/static/css/main.e55bc2bb.chunk.css.map",
+    "static/js/2.87e67329.chunk.js.LICENSE.txt": "/interview-snack/static/js/2.87e67329.chunk.js.LICENSE.txt",
+    "static/media/App.css": "/interview-snack/static/media/popcorn.01bcbd0d.jpeg"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.ca573adc.js",
+    "static/js/2.87e67329.chunk.js",
+    "static/css/main.e55bc2bb.chunk.css",
+    "static/js/main.9d8c9825.chunk.js"
+  ]
+}
