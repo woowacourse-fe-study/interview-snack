@@ -1,0 +1,229 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+button {
+  cursor: pointer;
+  border: none;
+  background: none;
+  font-family: inherit;
+}
+
+ul {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+.App {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+  min-height: 100vh;
+}
+
+.App_Background {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: url(./assets/popcorn.jpeg);
+  background-position: top center;
+  background-repeat: repeat-y;
+  background-size: 100vw;
+  background-color: transparent;
+  opacity: 0.4;
+  z-index: 0;
+}
+
+.App_Content {
+  margin: 1rem 0;
+  padding: 2rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 2rem;
+  width: 85vw;
+
+  background-color: rgba(255, 255, 255, 0.85);
+  border-radius: 20px;
+  z-index: 1;
+}
+
+.Heading1 + span {
+  margin: 0.5rem 0 2rem;
+  color: #e91e63;
+}
+
+.CrewList {
+  display: grid;
+  grid-template-columns: repeat(13, 1fr);
+  justify-items: center;
+  align-items: center;
+}
+
+.Crew {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 0.5rem;
+}
+
+.Crew__Button {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 0.5rem 0;
+  width: 3rem;
+  height: 3rem;
+  background-color: transparent;
+}
+
+.Crew__Button--selected > .Crew__Image {
+  border-color: #e91e63;
+}
+
+.Crew__Button--selected > .Crew__Name {
+  background-color: #e91e63;
+  color: white;
+}
+
+.Crew__Image {
+  width: 90%;
+  border-radius: 50%;
+  margin-bottom: 0.5rem;
+  border: 4px dashed transparent;
+}
+
+.Crew__Name {
+  font-size: 1rem;
+  text-align: center;
+  padding: 0.1rem 0.2rem;
+}
+
+.App__Main {
+  margin-top: 2rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 0;
+  background-color: rgba(255, 255, 255, 0.85);
+  border-radius: 20px;
+  z-index: 1;
+}
+
+.Review {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+
+.Review h2 {
+  text-align: center;
+  padding: 0.1rem 0.2rem;
+}
+
+.Review h2 > strong {
+  margin: 0 0.25rem;
+  padding: 0 0.5rem;
+  background-color: #e91e63;
+  color: white;
+}
+
+.Review__List {
+  list-style: none;
+  padding: 0 3rem;
+  width: 100%;
+}
+
+.Review__Item {
+  display: flex;
+  flex-direction: column;
+  padding: 1.5rem 1rem;
+  width: 100%;
+
+  line-height: 2;
+  white-space: pre-line;
+}
+
+.Review__Item__Title {
+  position: relative;
+  margin-bottom: 0.75rem;
+
+  font-weight: bold;
+  color: #e91e63;
+  font-size: 1.15rem;
+}
+
+.Review__Item__Title::before {
+  content: '★★★';
+  position: absolute;
+  top: 0.3rem;
+  left: -2.8rem;
+
+  color: #e91e63;
+  font-size: 0.9rem;
+}
+
+.Review__Item__Comment > strong {
+  position: relative;
+  margin-right: 0.75rem;
+}
+
+.Review__Item__Comment > strong::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: -6%;
+  width: 110%;
+  height: 10px;
+  background-color: #e91e63;
+  opacity: 0.2;
+}
+
+@media (max-width: 960px) {
+  .CrewList {
+    grid-template-columns: repeat(7, 1fr);
+  }
+
+  .Crew__Name {
+    font-size: 0.9rem;
+  }
+
+  .Review__List {
+    padding: 0 0.5rem;
+  }
+}
+
+@media (max-width: 590px) {
+  .App_Content {
+    width: 95vw;
+  }
+
+  .CrewList {
+    grid-template-columns: repeat(4, 1fr);
+  }
+
+  .Crew__Name {
+    font-size: 0.9rem;
+  }
+}
+
+@media (max-width: 400px) {
+  .CrewList {
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  .Review__List {
+    padding: 0 0.25rem;
+  }
+}
